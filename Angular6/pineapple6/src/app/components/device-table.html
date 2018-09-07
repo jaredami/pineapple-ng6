@@ -1,0 +1,17 @@
+<table>
+  <caption>Company Devices</caption>
+  <thead>
+    <tr>
+      <th *ngFor=" let header of headers"
+          [innerHtml]="header.full_label">
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of rows">
+      <td *ngFor="let column of row"
+          [innerHtml]="column">
+      </td>
+    </tr>
+  </tbody>
+</table>
