@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DeviceService } from '../services/device/device.service';
-import { Device, Label } from '../services/device/device.model';
+import { DeviceService } from '../../services/device/device.service';
+import { Device, Label } from '../../services/device/device.model';
 
 
 @Component({
@@ -12,8 +12,8 @@ import { Device, Label } from '../services/device/device.model';
 export class DeviceTableComponent implements OnInit {
   title = 'pineapple6';
 
-  public headers: Label[];
-  public rows: string[][];
+  headers: Label[];
+  rows: string[][];
 
   constructor(
     public deviceService: DeviceService
